@@ -15,6 +15,18 @@ def resolver_cuadratica(a_input, b_input, c_input):
 
     return "Lógica matemática pendiente..."
 
+    discriminante = b**2 - 4*a*c
+
+    if discriminante > 0:
+        x1 = (-b + discriminante**0.5) / (2*a)
+        x2 = (-b - discriminante**0.5) / (2*a)
+        return f"Dos raíces reales: x1 = {x1}, x2 = {x2}"
+    elif discriminante == 0:
+        x = -b / (2*a)
+        return f"Una raíz real doble: x = {x}"
+    else:
+        return "Lógica de raíces complejas pendiente..."
+
 if __name__ == "__main__":
     print(" Calculadora de Ecuación Cuadrática (ax^2 + bx + c = 0) ")
     val_a = input("Ingresa el valor de a: ")
