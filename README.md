@@ -124,8 +124,8 @@ git merge feature/validaciones  # Esto funciona perfecto (Fast-forward)
 git merge feature/logica-raices # CONFLICTO.
 ```
 
-Aquí se le muestra al público el archivo con los marcadores `<<<<<<<` y `>>>>>>>`. 
-**Resolución en vivo:** Borrar los marcadores y combinar ambos bloques para que la función quede así, luego hacer `git add` y `git commit`:
+En GitHub, presionar en "Resolver Conflicto" y se va a mostrar el archivo con los marcadores `<<<<<<<` y `>>>>>>>`. 
+Borrar los marcadores y combinar ambos bloques para que la función quede así, luego hacer `git add` y `git commit`:
 
 **Código en `main.py` tras resolver el conflicto:**
 ```python
